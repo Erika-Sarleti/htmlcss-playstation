@@ -6,3 +6,7 @@
 .h-10{
     height: 10%;
 }
+#navbarNavDropdown{
+    flex: 0 0 content; 
+    /* come cambiare il flex-basis da auto a boh? */
+}
