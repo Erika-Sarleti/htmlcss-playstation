@@ -1,3 +1,11 @@
+:root{
+    --bs-light-rgb: 255, 255, 255;
+}
+
+body{
+    background-color: blue;
+}
+
 .logo{
     max-width: 150px;
     width: 15%;
@@ -6,12 +14,11 @@
 .h-10{
     height: 10%;
 }
-.login-btn{
-    background-color: black;
-    padding: .1rem .25rem;
-    border: 1px solid black;
-}
+
 .dropdown-menu.show{
-    display: flex;
     border: none;
 }
+/* .dropdown-toggle::after{
+    content: url(img/sony_logo.svg);
+    border: none;
+} */
