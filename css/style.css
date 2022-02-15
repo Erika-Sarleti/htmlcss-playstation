@@ -6,4 +6,12 @@
 .h-10{
     height: 10%;
 }
-
+.login-btn{
+    background-color: black;
+    padding: .1rem .25rem;
+    border: 1px solid black;
+}
+.dropdown-menu.show{
+    display: flex;
+    border: none;
+}
