@@ -2,10 +2,6 @@
     --bs-light-rgb: 255, 255, 255;
 }
 
-body{
-    background-color: blue;
-}
-
 .logo{
     max-width: 150px;
     width: 15%;
@@ -18,7 +14,15 @@ body{
 .dropdown-menu.show{
     border: none;
 }
-/* .dropdown-toggle::after{
-    content: url(img/sony_logo.svg);
+.dropdown-toggle::after{
+    content: url("../img/chevron-down-solid.svg");
     border: none;
-} */
+}
+
+.jumbotron{ 
+    background-image: url("../img/jumbo-bg.png");
+    height:60vh ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
