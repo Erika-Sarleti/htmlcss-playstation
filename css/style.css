@@ -1,5 +1,6 @@
 :root{
     --bs-light-rgb: 255, 255, 255;
+
 }
 
 .logo{
@@ -18,11 +19,29 @@
     content: url("../img/chevron-down-solid.svg");
     border: none;
 }
-
+.returnal{
+    background-image: url("../img/jumbo-bg.png");;
+}
+.itt{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+}
 .jumbotron{ 
-    background-image: url("../img/jumbo-bg.png");
-    height:60vh ;
+    /* background-image: url("../img/jumbo-bg.png"); */
+    height:70vh ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.btn-orange{
+    background-color: #CD3D0F;
+    border: 1px solid #CD3D0F;
+    color: white;
+}
+.thumb-img{
+    width: 100%;
+    border-radius: 15px;
+}
+.text-gray{
+    color: var(--bs-gray-600);
 }
