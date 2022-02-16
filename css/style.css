@@ -4,6 +4,9 @@
     --bg-dark-blue: #161C3B;
 }
 
+
+
+/* Top header */
 .logo{
     max-width: 150px;
     width: 15%;
@@ -13,13 +16,76 @@
     height: 10%;
 }
 
+/* navbar */
+
+.dropdown-item:hover{
+    background-color: transparent; 
+}
+
+.dropdown-item.img:hover{
+   box-shadow: 0 0 7px 2px var(--bs-gray-400);
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.toggle-arrow{
+    height: 1em;
+    width: 1em;
+    
+    position: relative;
+}
+
+.toggle-arrow::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+
+    opacity: 1;
+    background-image: url("../img/chevron-down-solid.svg");
+    background-size: cover;
+    transition: transform .1s, opacity .5s;
+}
+.dropdown-toggle.show .toggle-arrow::before{
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.toggle-arrow::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+
+    background-image: url("../img/chevron-down-solid-hover.svg");
+    background-size: cover;
+    opacity: 0;
+
+    transition: transform .1s, opacity .5s ;
+}
+.dropdown-toggle.show .toggle-arrow::after{
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.ms_negative-margin{
+    margin-left: -15px;
+    margin-right: 20px;
+}
+
+.list-style-disc{
+    color: #0070d1;
+    list-style-type: disc;
+}
+
+.ms_negative-margin:hover{
+    color: #0070d1;
+}
 .dropdown-menu.show{
     border: none;
 }
-.dropdown-toggle::after{
-    content: url("../img/chevron-down-solid.svg");
-    border: none;
-}
+
+/* jumbotron */
 .returnal{
     background-image: url("../img/jumbo-bg.png");;
 }
@@ -27,7 +93,7 @@
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
 }
 .jumbotron{ 
-    /* background-image: url("../img/jumbo-bg.png"); */
+
     height:70vh ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,10 +105,39 @@
     border: 1px solid #CD3D0F;
     color: white;
 }
+/* presentazione ps5 */
+.border-blue{
+    border-bottom: 2px solid transparent;
+}
+
+ .border-blue-block,.border-blue:hover{
+    border-bottom: 2px solid #00439C;
+}
+
+.opacity-75:hover{
+    opacity: 1 !important;
+}
 .thumb-img{
     width: 100%;
     border-radius: 15px;
 }
+.thumb-img.carousel{
+    transition: transform .5s;
+
+}
+.thumb-img.carousel:hover{
+    transform: translatey(-15px);
+}
+
+.game-card:hover{
+    transition: transform .5s;
+}
+
+.game-card:hover{
+    transform:scale(1.05)
+}
+
+/* sezioni Ps plus e Ps Now */
 .text-gray{
     color: var(--bs-gray-600);
 }
@@ -52,6 +147,7 @@
 .bg-dark-blue{
     background-color: var(--bg-dark-blue);
 }
+/* footer */
 .bg-footer{
  background-color: #00439C;
 }
@@ -62,4 +158,28 @@
 
 .footer_logo{
     width: 15%;
+}
+
+
+/* hover bottoni */
+
+.btn-dark:hover{
+    box-shadow: inset 0 0 0 3px white;
+}
+
+.btn-orange:hover{
+    box-shadow: inset 0 0 0 3px black;
+    color: white;
+}
+
+.btn-light:hover{
+    box-shadow: inset 0 0 0 3px var(--bg-dark-blue);
+}
+
+.btn-light.text-primary:hover{
+    box-shadow: inset 0 0 0 3px var(--bg-gray)
+}
+
+.btn-primary:hover{
+    box-shadow: inset 0 0 0 3px white;
 }
