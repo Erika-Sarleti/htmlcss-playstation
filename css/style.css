@@ -1,6 +1,7 @@
 :root{
     --bs-light-rgb: 255, 255, 255;
-
+    --bg-gray:#BEBCBB;
+    --bg-dark-blue: #161C3B;
 }
 
 .logo{
@@ -44,4 +45,10 @@
 }
 .text-gray{
     color: var(--bs-gray-600);
+}
+.bg-gray{
+    background-color: var(--bg-gray);
+}
+.bg-dark-blue{
+    background-color: var(--bg-dark-blue);
 }
